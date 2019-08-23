@@ -41,8 +41,7 @@ do
     npx framer-cli build 
     
     # Publish project to team store
-    # @TODO uncomment
-    # npx framer-cli publish --yes
+    npx framer-cli publish --yes
   else
     echo "$framerProject had no $PACKAGE_NAMESPACES dependency updates"
   fi 
