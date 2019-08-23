@@ -1,0 +1,23 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "07069bfe-9b99-46ef-b2b2-5e5b1198f0b2",
+		"displayName": "Lozenge"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/lozenge": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.lozenge",
+	"version": "1.7.0"
+}

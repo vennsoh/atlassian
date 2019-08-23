@@ -1,0 +1,23 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "d34c8436-bfe6-46dc-a2b9-d5b535ce1319",
+		"displayName": "Toggle"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/toggle": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.toggle",
+	"version": "1.0.0"
+}

@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "485dd75c-a2a7-472f-8e87-150c02d8fbb8",
+		"displayName": "Radio"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/form": "latest",
+		"@atlaskit/radio": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.radio",
+	"version": "1.5.0"
+}

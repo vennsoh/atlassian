@@ -1,0 +1,20 @@
+{
+  "main": "dist/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^16.8"
+  },
+  "peerDependencies": {
+    "framer": "^1.0",
+    "react": "^16.8"
+  },
+  "framer": {
+    "id": "584ed3d8-7fc9-4ccc-81ba-cb9cbd5d4671"
+  },
+  "author": "Addison Schultz",
+  "dependencies": {
+    "@atlaskit/breadcrumbs": "latest",
+    "@atlaskit/type-helpers": "latest",
+    "styled-components": "latest"
+  }
+}

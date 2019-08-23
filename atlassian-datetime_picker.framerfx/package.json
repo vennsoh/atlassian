@@ -1,0 +1,25 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "e1cc239f-f3e8-41d2-a433-e662eaf4e785",
+		"displayName": "Datetime picker"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/datetime-picker": "latest",
+		"@atlaskit/form": "latest",
+		"date-fns": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.datetime-picker",
+	"version": "1.11.0"
+}

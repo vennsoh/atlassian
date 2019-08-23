@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "96d641e2-9f5f-4264-ba29-ea5045cf9c92",
+		"displayName": "Badge"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/avatar": "latest",
+		"@atlaskit/badge": "latest",
+		"@atlaskit/css-reset": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.badge",
+	"version": "1.1.0"
+}

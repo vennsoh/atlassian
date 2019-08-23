@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "b22f19eb-5b4f-4a60-a32f-bb29d18006b2",
+		"displayName": "Checkbox"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/checkbox": "latest",
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/form": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.checkbox",
+	"version": "1.0.0"
+}

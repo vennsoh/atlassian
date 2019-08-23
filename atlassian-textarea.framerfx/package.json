@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "fc007c88-ea70-4979-bbad-b96c0f6c0575",
+		"displayName": "Textarea"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/form": "latest",
+		"@atlaskit/textarea": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.textarea",
+	"version": "1.11.0"
+}

@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "c88ac4b9-642f-4f72-848c-b9280b23bffe",
+		"displayName": "Range"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/css-reset": "latest",
+		"@atlaskit/range": "latest",
+		"@atlaskit/tooltip": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.range",
+	"version": "1.4.0"
+}

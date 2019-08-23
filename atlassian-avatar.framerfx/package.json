@@ -1,0 +1,24 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "d2f4ddb7-7d42-4337-afbd-952facddb657",
+		"displayName": "Avatar"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/avatar": "latest",
+		"@atlaskit/avatar-group": "latest",
+		"@atlaskit/css-reset": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.avatar",
+	"version": "1.1.0"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "atlassian",
+  "version": "1.0.0",
+  "description": "A repository for Atlassian Components in Framer X",
+  "main": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

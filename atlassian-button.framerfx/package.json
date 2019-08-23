@@ -1,0 +1,23 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "f295060a-85f5-40a5-929e-1e5a96de2f34",
+		"displayName": "Button"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@atlaskit/button": "latest",
+		"@atlaskit/css-reset": "latest",
+		"styled-components": "latest"
+	},
+	"name": "@framer/atlassian.button",
+	"version": "1.4.0"
+}

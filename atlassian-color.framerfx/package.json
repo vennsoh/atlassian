@@ -1,0 +1,18 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "f1412cc3-f048-4653-ac25-80aa203fc2a0",
+		"displayName": "Color"
+	},
+	"author": "Ee Venn Soh",
+	"name": "@framer/atlassian.color",
+	"version": "1.0.0"
+}
