@@ -18,7 +18,7 @@ import { AtlassianIcon, AtlassianWordmark } from "@atlaskit/logo";
 
 import AppSwitcherIcon from "@atlaskit/icon/glyph/app-switcher";
 
-export function Navigation() {
+export function Navigation(props) {
   const AppSwitcherComponent = props => (
     <GlobalItem
       {...props}
@@ -28,15 +28,10 @@ export function Navigation() {
     />
   );
 
-  const SearchTooltip = () => (
-    <div style={{ background: "red" }}> Search Tooltip</div>
-  );
-
   const MyGlobalNavigation = () => (
     <GlobalNavigation
       productIcon={() => <AtlassianIcon size="medium" />}
       onProductClick={() => console.log("product clicked")}
-      searchTooltip={<SearchTooltip />}
       onCreateClick={() => console.log("create clicked")}
       onSearchClick={() => console.log("search clicked")}
       onStarredClick={() => console.log("starred clicked")}
@@ -44,7 +39,6 @@ export function Navigation() {
       helpItems={() => <div />}
       onNotificationClick={() => console.log("notification clicked")}
       appSwitcherComponent={AppSwitcherComponent}
-      appSwitcherTooltip="Switch to ..."
       onSettingsClick={() => console.log("settings clicked")}
       // loginHref="#login"
     />
@@ -62,12 +56,17 @@ export function Navigation() {
       <MenuSection>
         {({ className }) => (
           <div className={className}>
-            <Item text="Dashboard" />
-            <Item text="Things" />
-            <Item text="Settings" />
-            <Separator />
-            <GroupHeading>Add-ons</GroupHeading>
-            <Item text="My plugin" />
+            {props.menuItems.map((item, index) => {
+              return <Item text={item} />;
+            })}
+
+            {props.menuFooter && (
+              <>
+                <Separator />
+                <GroupHeading>Add-ons</GroupHeading>
+                <Item text="My plugin" />
+              </>
+            )}
           </div>
         )}
       </MenuSection>
@@ -80,14 +79,30 @@ export function Navigation() {
         globalNavigation={MyGlobalNavigation}
         productNavigation={MyProductNavigation}
         containerNavigation={null}
-      >
-        <div style={{ padding: "32px 40px" }}>Page content goes here.</div>
-      </LayoutManager>
+      />
     </NavigationProvider>
   );
 }
 
+addPropertyControls(Navigation, {
+  menuItems: {
+    type: ControlType.Array,
+    title: "Menu Items",
+    defaultValue: ["Dashboard", "Things", "Settings"],
+    propertyControl: {
+      type: ControlType.String
+    }
+  },
+  menuFooter: {
+    type: ControlType.Boolean,
+    title: "Menu Footer",
+    defaultValue: true,
+    enabledTitle: "Show",
+    disabledTitle: "Hide"
+  }
+});
+
 Navigation.defaultProps = {
   height: 710,
-  width: 1152
+  width: 340
 };
