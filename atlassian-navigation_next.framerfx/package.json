@@ -6,7 +6,9 @@
 		"framer": "^1"
 	},
 	"dependencies": {
+		"@atlaskit/global-navigation": "^8.0.0",
 		"@atlaskit/navigation-next": "^6.7.4",
 		"styled-components": "^4.3.2"
-	}
+	},
+	"author": "Addison Schultz"
 }

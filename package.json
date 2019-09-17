@@ -6,5 +6,8 @@
   "scripts": {},
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "@atlaskit/global-navigation": "^8.0.0",
+    "@atlaskit/logo": "^12.2.0"
+  }
 }
