@@ -63,8 +63,10 @@ export function Navigation(props) {
             {props.menuFooter && (
               <>
                 <Separator />
-                <GroupHeading>Add-ons</GroupHeading>
-                <Item text="My plugin" />
+                <GroupHeading>{props.footerTitle}</GroupHeading>
+                {props.footerItems.map((item, index) => {
+                  return <Item text={item} />;
+                })}
               </>
             )}
           </div>
@@ -85,6 +87,13 @@ export function Navigation(props) {
 }
 
 addPropertyControls(Navigation, {
+  menuFooter: {
+    type: ControlType.Boolean,
+    title: "Menu Footer",
+    defaultValue: true,
+    enabledTitle: "Show",
+    disabledTitle: "Hide"
+  },
   menuItems: {
     type: ControlType.Array,
     title: "Menu Items",
@@ -93,16 +102,22 @@ addPropertyControls(Navigation, {
       type: ControlType.String
     }
   },
-  menuFooter: {
-    type: ControlType.Boolean,
-    title: "Menu Footer",
-    defaultValue: true,
-    enabledTitle: "Show",
-    disabledTitle: "Hide"
+  footerTitle: {
+    type: ControlType.String,
+    title: "Footer Title",
+    defaultValue: "Add-ons"
+  },
+  footerItems: {
+    type: ControlType.Array,
+    title: "Footer Items",
+    defaultValue: ["My plugin"],
+    propertyControl: {
+      type: ControlType.String
+    }
   }
 });
 
 Navigation.defaultProps = {
-  height: 710,
+  height: 720,
   width: 340
 };

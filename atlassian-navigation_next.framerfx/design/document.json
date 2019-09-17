@@ -14,15 +14,28 @@
           {
             "__class" : "CodeComponentNode",
             "aspectRatio" : null,
-            "bottom" : 10,
+            "bottom" : 0,
             "centerAnchorX" : 0.14756944444444445,
-            "centerAnchorY" : 0.49305555555555558,
+            "centerAnchorY" : 0.5,
             "children" : [
 
             ],
             "clip" : true,
             "codeComponentIdentifier" : ".\/Navigation.tsx_Navigation",
             "codeComponentProps" : {
+              "footerItems" : [
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "My plugin"
+                },
+                {
+                  "enabled" : true,
+                  "type" : "string",
+                  "value" : "another one "
+                }
+              ],
+              "footerTitle" : "Add-ons",
               "menuFooter" : true,
               "menuItems" : [
                 {
@@ -39,11 +52,6 @@
                   "enabled" : true,
                   "type" : "string",
                   "value" : "Settings"
-                },
-                {
-                  "enabled" : true,
-                  "type" : "string",
-                  "value" : "Another Item"
                 }
               ]
             },
@@ -60,9 +68,9 @@
             "fillImagePixelWidth" : null,
             "fillImageResize" : "fill",
             "fillType" : "color",
-            "height" : 710,
+            "height" : 720,
             "heightType" : 0,
-            "id" : "a1lX2RsG3",
+            "id" : "Mcvl9kYLH",
             "intrinsicHeight" : 710,
             "intrinsicWidth" : 340,
             "left" : 0,
