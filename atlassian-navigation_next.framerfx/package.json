@@ -1,18 +1,16 @@
 {
-	"framer": {
-		"id": "476da2f7-a592-49b1-9d42-ec941b95f0f9",
-		"displayName": "Navigation next"
-	},
-	"peerDependencies": {
-		"framer": "^1"
-	},
-	"dependencies": {
-		"@atlaskit/global-navigation": "^8.0.0",
-		"@atlaskit/navigation-next": "^6.7.4",
-		"@framer/atlassian.navigation-next": "^1.0.0",
-		"styled-components": "^4.3.2"
-	},
-	"author": "Addison Schultz",
-	"name": "@framer/atlassian.navigation-next",
-	"version": "1.0.0"
+  "framer": {
+    "id": "476da2f7-a592-49b1-9d42-ec941b95f0f9"
+  },
+  "peerDependencies": {
+    "framer": "^1"
+  },
+  "dependencies": {
+    "@atlaskit/global-navigation": "latest",
+    "@atlaskit/icon": "latest",
+    "@atlaskit/logo": "latest",
+    "@atlaskit/navigation-next": "latest",
+    "styled-components": "^4.3.2"
+  },
+  "author": "Addison Schultz"
 }
