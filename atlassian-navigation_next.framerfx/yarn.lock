@@ -536,6 +536,15 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.3.tgz#dfa0c92efe44a1d1a7974fb49ffeb40ef2da5a27"
   integrity sha512-zVgvPwGK7c1aVdUVc9Qv7SqepOGRDrqCw7KZPSZziWGxSlbII3gmvGLPzLX4d0n0BMbamBacUrN22zOMyFFEkQ==
 
+"@framer/atlassian.navigation-next@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.framer.com/@framer/atlassian.navigation-next/-/@framer/atlassian.navigation-next-1.0.0.tgz#750c5dae44f0c4e2590d658172ff90fe8078dae7"
+  integrity sha512-BFeTCWcDnoKJfsoU5hzpX7F83kINgXRqu2vtC5DUuBrUYtXzyv9mR2JYSMYrxi1kKY6bUaWHqkhgJXaPc8am1g==
+  dependencies:
+    "@atlaskit/global-navigation" "^8.0.0"
+    "@atlaskit/navigation-next" "^6.7.4"
+    styled-components "^4.3.2"
+
 ansi-styles@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
