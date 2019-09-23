@@ -2,7 +2,8 @@
   "main": "dist/index.js",
   "license": "MIT",
   "framer": {
-    "id": "476da2f7-a592-49b1-9d42-ec941b95f0f9"
+    "id": "476da2f7-a592-49b1-9d42-ec941b95f0f9",
+    "displayName": "Navigation next"
   },
   "peerDependencies": {
     "framer": "^1"
@@ -14,5 +15,7 @@
     "@atlaskit/navigation-next": "latest",
     "styled-components": "^4.3.2"
   },
-  "author": "Addison Schultz"
+  "author": "Ee Venn Soh",
+  "name": "@framer/atlassian.navigation-next",
+  "version": "1.0.0"
 }
