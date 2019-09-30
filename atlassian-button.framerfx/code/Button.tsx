@@ -1,10 +1,26 @@
 import * as React from "react"
-import { addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType, Frame } from "framer"
 import "@atlaskit/css-reset"
 import AKButton from "@atlaskit/button"
 
-export function Button(props) {
-    return <AKButton {...props}>{props.text}</AKButton>
+type Props = {
+    bgColor: string
+    appearance: string
+    text: string
+    isDisabled: boolean
+    width: number
+    height: number
+    shouldFitContainer: boolean
+}
+
+export function Button(props: Props) {
+    const { text } = props
+
+    return (
+        <Frame {...props}>
+            <AKButton {...props}>{text}</AKButton>
+        </Frame>
+    )
 }
 
 Button.defaultProps = {
@@ -14,6 +30,7 @@ Button.defaultProps = {
     width: 92,
     height: 32,
     shouldFitContainer: false,
+    backgroundColor: "transparent",
 }
 
 addPropertyControls(Button, {
