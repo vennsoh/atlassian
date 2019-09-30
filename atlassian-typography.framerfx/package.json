@@ -1,0 +1,21 @@
+{
+	"main": "dist/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.8"
+	},
+	"peerDependencies": {
+		"framer": "^1.0",
+		"react": "^16.8"
+	},
+	"framer": {
+		"id": "a68d6794-c3fd-43e2-bfc5-29d4e559b344",
+		"displayName": "Typography"
+	},
+	"author": "Ee Venn Soh",
+	"dependencies": {
+		"@framer/atlassian.color": "^1.0.0"
+	},
+	"name": "@framer/atlassian.typography",
+	"version": "1.0.0"
+}
