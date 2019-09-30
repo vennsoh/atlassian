@@ -1,5 +1,5 @@
 import * as React from "react"
-import { addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType, Frame } from "framer"
 import "@atlaskit/css-reset"
 import Form, {
     Field,
@@ -20,6 +20,23 @@ const Wrapper = styled.div`
   }
 `
 
+type Props = {
+    width: number
+    height: number
+    label: string
+    isRequired: boolean
+    showValidation: boolean
+    type: string
+    placeholder: string
+    errorMessage: string
+    validMessage: string
+    helperMessage: string
+    validationValue: string
+    value: string
+    backgroundColor: string
+    onValueChange: (value: string) => void
+}
+
 Textfield.defaultProps = {
     width: 240,
     height: 80,
@@ -32,49 +49,65 @@ Textfield.defaultProps = {
     helperMessage: "Helper text",
     validationValue: "helper",
     value: "",
+    backgroundColor: "transparent",
     onValueChange: () => null,
 }
 
-export function Textfield(props) {
-    const [textfieldValue, setTextfieldValue] = React.useState(props.value)
+export function Textfield(props: Props) {
+    const {
+        label,
+        isRequired,
+        showValidation,
+        type,
+        placeholder,
+        errorMessage,
+        validMessage,
+        helperMessage,
+        validationValue,
+        onValueChange,
+        value,
+    } = props
+
+    const [textfieldValue, setTextfieldValue] = React.useState(value)
 
     React.useEffect(() => {
-        setTextfieldValue(props.value)
-    }, [props.value])
+        setTextfieldValue(value)
+    }, [value])
 
     const handleTextfield = event => {
         const { value } = event.target
         setTextfieldValue(value)
-        props.onValueChange(value)
+        onValueChange(value)
     }
 
     let validationText = {
-        error: <ErrorMessage>{props.errorMessage}</ErrorMessage>,
-        valid: <ValidMessage> {props.validMessage}</ValidMessage>,
-        helper: <HelperMessage> {props.helperMessage}</HelperMessage>,
+        error: <ErrorMessage>{errorMessage}</ErrorMessage>,
+        valid: <ValidMessage> {validMessage}</ValidMessage>,
+        helper: <HelperMessage> {helperMessage}</HelperMessage>,
     }
 
     return (
-        <Wrapper>
-            <Field
-                name="textfield"
-                label={props.label}
-                isRequired={props.isRequired}
-            >
-                {({ fieldProps }) => (
-                    <>
-                        <AKTextfield
-                            {...fieldProps}
-                            placeholder={props.placeholder}
-                            onChange={handleTextfield}
-                            value={textfieldValue}
-                        />
-                        {props.showValidation &&
-                            validationText[props.validationValue]}
-                    </>
-                )}
-            </Field>
-        </Wrapper>
+        <Frame {...props}>
+            <Wrapper>
+                <Field
+                    name="textfield"
+                    label={label}
+                    isRequired={props.isRequired}
+                >
+                    {({ fieldProps }) => (
+                        <>
+                            <AKTextfield
+                                {...fieldProps}
+                                placeholder={placeholder}
+                                onChange={handleTextfield}
+                                value={textfieldValue}
+                            />
+                            {showValidation && validationText[validationValue]}
+                        </>
+                    )}
+                </Field>
+            </Wrapper>
+        </Frame>
     )
 }
 
@@ -90,6 +123,34 @@ addPropertyControls(Textfield, {
     placeholder: {
         type: ControlType.String,
         title: "Placeholder",
+    },
+    type: {
+        type: ControlType.Enum,
+        title: "Type",
+        options: [
+            "date",
+            "email",
+            "number",
+            "password",
+            "search",
+            "tel",
+            "text",
+            "time",
+            "url",
+            "week",
+        ],
+        optionTitles: [
+            "Date",
+            "Email",
+            "Number",
+            "Password",
+            "Phone",
+            "Search",
+            "Text",
+            "Time",
+            "URL",
+            "Week",
+        ],
     },
     isRequired: {
         type: ControlType.Boolean,
