@@ -98,6 +98,7 @@ export function Textfield(props: Props) {
                         <>
                             <AKTextfield
                                 {...fieldProps}
+                                type={type}
                                 placeholder={placeholder}
                                 onChange={handleTextfield}
                                 value={textfieldValue}
