@@ -101,6 +101,12 @@
         "widthType" : 0
       }
     ],
+    "guidesX" : [
+
+    ],
+    "guidesY" : [
+
+    ],
     "id" : "yIS4v3BKg",
     "name" : null,
     "originalid" : null,
@@ -113,5 +119,5 @@
     ],
     "visible" : false
   },
-  "version" : 52
+  "version" : 54
 }
