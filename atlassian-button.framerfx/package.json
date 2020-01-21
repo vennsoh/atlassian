@@ -16,6 +16,7 @@
 	"dependencies": {
 		"@atlaskit/button": "latest",
 		"@atlaskit/css-reset": "latest",
+		"@atlaskit/icon": "^19.1.0",
 		"styled-components": "latest"
 	},
 	"name": "@framer/atlassian.button",

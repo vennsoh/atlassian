@@ -15,6 +15,8 @@
         "codeComponentIdentifier" : ".\/Button.tsx_Button",
         "codeComponentProps" : {
           "appearance" : "primary",
+          "haveIcon" : true,
+          "iconName" : "activity",
           "isDisabled" : false,
           "shouldFitContainer" : true,
           "text" : "Hello world"
@@ -28,6 +30,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -92,9 +95,15 @@
         "rotation" : 0,
         "top" : 215,
         "visible" : true,
-        "width" : 151,
+        "width" : 130,
         "widthType" : 0
       }
+    ],
+    "guidesX" : [
+
+    ],
+    "guidesY" : [
+
     ],
     "id" : "gdFU8X7Be",
     "name" : null,
@@ -108,5 +117,5 @@
     ],
     "visible" : false
   },
-  "version" : 52
+  "version" : 55
 }

@@ -16,6 +16,7 @@
         "codeComponentProps" : {
           "isChecked" : false,
           "isDisabled" : false,
+          "isIndeterminate" : false,
           "isInvalid" : false,
           "isRequired" : true,
           "label" : "Checkbox"
@@ -29,6 +30,7 @@
         "fillColor" : "rgba(255,255,255,1)",
         "fillEnabled" : false,
         "fillImage" : null,
+        "fillImageOriginalName" : null,
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
@@ -97,6 +99,12 @@
         "widthType" : 0
       }
     ],
+    "guidesX" : [
+
+    ],
+    "guidesY" : [
+
+    ],
     "id" : "PX2F9Z_Mw",
     "name" : null,
     "originalid" : null,
@@ -109,5 +117,5 @@
     ],
     "visible" : false
   },
-  "version" : 52
+  "version" : 55
 }

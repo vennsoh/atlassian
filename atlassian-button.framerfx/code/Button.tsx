@@ -2,6 +2,7 @@ import * as React from "react"
 import { addPropertyControls, ControlType, Frame } from "framer"
 import "@atlaskit/css-reset"
 import AKButton from "@atlaskit/button"
+import Icon from "@atlaskit/icon"
 
 type Props = {
     bgColor: string
@@ -11,14 +12,38 @@ type Props = {
     width: number
     height: number
     shouldFitContainer: boolean
+    haveIcon: boolean
+    iconName: string
 }
 
 export function Button(props: Props) {
-    const { text } = props
+    const [myIcon, setIcon] = React.useState(null)
+    const { text, haveIcon, iconName } = props
+
+    React.useEffect(() => {
+        async function loader() {
+            const icon = await import(`@atlaskit/icon/glyph/${iconName}.js`)
+            return icon
+        }
+
+        loader().then(x => {
+            setIcon(x.default)
+        })
+
+        return () => {}
+    }, [iconName])
+
+    const ChosenIcon = <Icon glyph={() => myIcon} />
 
     return (
         <Frame {...props}>
-            <AKButton {...props}>{text}</AKButton>
+            {haveIcon ? (
+                <AKButton {...props} iconBefore={ChosenIcon}>
+                    {text}
+                </AKButton>
+            ) : (
+                <AKButton {...props}>{text}</AKButton>
+            )}
         </Frame>
     )
 }
@@ -31,6 +56,8 @@ Button.defaultProps = {
     height: 32,
     shouldFitContainer: false,
     backgroundColor: "transparent",
+    haveIcon: false,
+    iconName: "activity",
 }
 
 addPropertyControls(Button, {
@@ -67,4 +94,9 @@ addPropertyControls(Button, {
         type: ControlType.Boolean,
         title: "Fit container",
     },
+    haveIcon: {
+        type: ControlType.Boolean,
+        title: "Include icon?",
+    },
+    iconName: { type: ControlType.String, title: "Icon name" },
 })

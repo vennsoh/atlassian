@@ -33,6 +33,15 @@
     fbjs "^1.0.0"
     mkdirp "^0.5.1"
 
+"@atlaskit/icon@^19.1.0":
+  version "19.1.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/icon/-/icon-19.1.0.tgz#50e7050765a6d055cf0005f18a189f9eb80e3753"
+  integrity sha512-h/CNeRU6+RcoBSWRPr/rs0+iMrkLqe7n3fzddQ/gglw59uM02b9s57WjacuoCkq8T17ib1QVoEoe2VIenxeHdA==
+  dependencies:
+    "@atlaskit/theme" "^9.5.0"
+    tslib "^1.9.3"
+    uuid "^3.1.0"
+
 "@atlaskit/spinner@^12.0.1":
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/@atlaskit/spinner/-/spinner-12.0.1.tgz#2487927309b9a6a80922aa466e73efd616102e8b"
@@ -50,6 +59,15 @@
     "@babel/runtime" "^7.0.0"
     exenv "^1.2.2"
     prop-types "^15.5.10"
+
+"@atlaskit/theme@^9.5.0":
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/@atlaskit/theme/-/theme-9.5.0.tgz#1bf6f3e39baf7a1a3c1e798d18848bedecdf2107"
+  integrity sha512-xkYdw3AypG5j0sU/RDwHnEn9vL1ISbWCn3K78Zi9y5loRXOLYObpVxIkdNkunUUOVbgzTyHkG+YX6YhKf12fjg==
+  dependencies:
+    exenv "^1.2.2"
+    prop-types "^15.5.10"
+    tslib "^1.9.3"
 
 "@atlaskit/type-helpers@^4.1.1":
   version "4.1.1"
@@ -654,6 +672,11 @@ ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"
   integrity sha512-8OaIKfzL5cpx8eCMAhhvTlft8GYF8b2eQr6JkCyVdrgjcytyOmPCXrqXFcUnhonRpLlh5yxEZVohm6mzaowUOw==
+
+uuid@^3.1.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
+  integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
 whatwg-fetch@>=0.10.0:
   version "3.0.0"
