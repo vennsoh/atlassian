@@ -98,5 +98,11 @@ addPropertyControls(Button, {
         type: ControlType.Boolean,
         title: "Include icon?",
     },
-    iconName: { type: ControlType.String, title: "Icon name" },
+    iconName: {
+        hidden(props) {
+            return props.haveIcon === false
+        },
+        type: ControlType.String,
+        title: "Icon name",
+    },
 })
