@@ -15,10 +15,12 @@
         "codeComponentIdentifier" : ".\/Button.tsx_Button",
         "codeComponentProps" : {
           "appearance" : "primary",
-          "haveIcon" : true,
-          "iconName" : "activity",
+          "hasicon" : false,
+          "iconColor" : "",
+          "iconname" : "activity",
           "isDisabled" : false,
-          "shouldFitContainer" : true,
+          "isSelected" : false,
+          "shouldFitContainer" : false,
           "text" : "Hello world"
         },
         "codeOverrideEnabled" : false,
@@ -34,50 +36,13 @@
         "fillImagePixelHeight" : null,
         "fillImagePixelWidth" : null,
         "fillImageResize" : "fill",
-        "fillLinearGradient" : {
-          "__class" : "LinearGradient",
-          "alpha" : 1,
-          "angle" : 180,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ]
-        },
-        "fillRadialGradient" : {
-          "__class" : "RadialGradient",
-          "alpha" : 1,
-          "centerAnchorX" : 0.5,
-          "centerAnchorY" : 0.5,
-          "heightFactor" : 0.5,
-          "stops" : [
-            {
-              "__class" : "GradientColorStop",
-              "position" : 0,
-              "value" : "rgba(0,0,0,0)"
-            },
-            {
-              "__class" : "GradientColorStop",
-              "position" : 1,
-              "value" : "black"
-            }
-          ],
-          "widthFactor" : 0.5
-        },
         "fillType" : "color",
         "height" : 32,
         "heightType" : 0,
-        "id" : "gcUuefx96",
+        "id" : "PZ9EnZcOg",
         "intrinsicHeight" : 32,
         "intrinsicWidth" : 92,
-        "left" : 645,
+        "left" : 643,
         "locked" : false,
         "name" : null,
         "opacity" : 1,
@@ -93,9 +58,9 @@
         "radiusTopRight" : 0,
         "right" : null,
         "rotation" : 0,
-        "top" : 215,
+        "top" : 154,
         "visible" : true,
-        "width" : 130,
+        "width" : 92,
         "widthType" : 0
       }
     ],

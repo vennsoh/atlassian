@@ -12,17 +12,19 @@ type Props = {
     width: number
     height: number
     shouldFitContainer: boolean
-    haveIcon: boolean
-    iconName: string
+    hasicon: boolean
+    iconname: string
+    iconColor: string
+    isSelected: boolean
 }
 
 export function Button(props: Props) {
     const [myIcon, setIcon] = React.useState(null)
-    const { text, haveIcon, iconName } = props
+    const { text, hasicon, iconname, iconColor } = props
 
     React.useEffect(() => {
         async function loader() {
-            const icon = await import(`@atlaskit/icon/glyph/${iconName}.js`)
+            const icon = await import(`@atlaskit/icon/glyph/${iconname}.js`)
             return icon
         }
 
@@ -31,13 +33,13 @@ export function Button(props: Props) {
         })
 
         return () => {}
-    }, [iconName])
+    }, [iconname])
 
-    const ChosenIcon = <Icon glyph={() => myIcon} />
+    const ChosenIcon = <Icon primaryColor={iconColor} glyph={() => myIcon} />
 
     return (
-        <Frame {...props}>
-            {haveIcon ? (
+        <Frame {...props} backgroundColor="transparent">
+            {hasicon ? (
                 <AKButton {...props} iconBefore={ChosenIcon}>
                     {text}
                 </AKButton>
@@ -55,9 +57,10 @@ Button.defaultProps = {
     width: 92,
     height: 32,
     shouldFitContainer: false,
-    backgroundColor: "transparent",
-    haveIcon: false,
-    iconName: "activity",
+    iconname: "activity",
+    hasicon: false,
+    iconColor: "",
+    isSelected: false,
 }
 
 addPropertyControls(Button, {
@@ -94,15 +97,26 @@ addPropertyControls(Button, {
         type: ControlType.Boolean,
         title: "Fit container",
     },
-    haveIcon: {
+    isSelected: {
+        type: ControlType.Boolean,
+        title: "Selected?",
+    },
+    hasicon: {
         type: ControlType.Boolean,
         title: "Include icon?",
     },
-    iconName: {
+    iconname: {
         hidden(props) {
-            return props.haveIcon === false
+            return props.hasicon === false
         },
         type: ControlType.String,
         title: "Icon name",
+    },
+    iconColor: {
+        hidden(props) {
+            return props.hasicon === false
+        },
+        type: ControlType.String,
+        title: "Icon color",
     },
 })
